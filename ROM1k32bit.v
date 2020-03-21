@@ -34,6 +34,7 @@ module ROM1k32bit(
 			ROM[i] = 0;
 		end
 		$readmemh("code.txt", ROM);
+		$readmemh("code_handler.txt", ROM, 1120, 2047);
 	end
 	
 	

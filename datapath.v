@@ -60,8 +60,17 @@
 
 module datapath(
 	input clk,
-	input reset
+	input reset,
+	input [31:0] PrRD,
+	input [7:2] HWInt,   // HardWare Interrupt 
+	output [31:2] PrAddr,
+	output [31:0] PrWD, 
+	output PrWE
     );
+	// New Add Interface
+	assign PrAddr = dm.Addr,
+	PrWD = dm.WD,
+	PrWE = dm.WE;
 	 
 	 // Wire Forward
 	wire [31:0] RD1_D_F, RD2_D_F, RD1_E_F, RD2_E_F, RD2_MEM_F;

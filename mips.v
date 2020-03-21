@@ -21,8 +21,11 @@
 
 module mips(
     input clk,
-    input reset
+    input reset,
+	input interrupt,
+	output [31:0] addr
     );
+
 	datapath myDatapath(
 	.clk(clk),
 	.reset(reset)
