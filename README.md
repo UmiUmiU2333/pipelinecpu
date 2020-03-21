@@ -1,7 +1,7 @@
 # pipelinecpu
 5-stage pipeline cpu which can achieve 50 mips instructions writing by verilog...
 
-## Addressing hazard applying stall and forward methods.
+## Addressing hazard by applying stall and forward methods.
 
 ## how to run mips instruction?
 - use ISE create a new project
